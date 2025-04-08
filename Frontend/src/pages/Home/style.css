@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #6b9ac9;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+  & button {
+    border-radius: 30px;
+    background-color: #a7c7e7;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1a3e72;
+  }
+
+  & button:hover {
+    opacity: 0.8;
+  }
+
+  & input,
+  & select {
+    border: 1px solid #c9d9f0;
+    border-radius: 30px;
+    background-color: #e1ebfa;
+    color: #1a3e72;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+    height: 40px;
+  }
+
+  & select option {
+    color: #333;
+  }
+}
+
+.list-tasks-button {
+  background-color: #1a3e72; 
+  color: #f0f5ff; 
+  border: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+}
+
+.list-tasks-button:hover {
+  background-color: #0d2b57; 
+}
+
+.success-message {
+  color: #1a3e72; 
+  font-weight: bold;
+  margin-top: 10px;
+}
